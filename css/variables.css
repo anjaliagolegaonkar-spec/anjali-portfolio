@@ -1,0 +1,88 @@
+/* ==========================================================================
+   DESIGN TOKENS & SYSTEM VARIABLES
+   Theme: "ANJALI'S DIGITAL LAB"
+   Personal Brand + Developer Environment + Digital Lab + Creative Modern Tech
+   ========================================================================== */
+
+:root {
+  /* Core Color Palette: Deep Charcoal / Developer Obsidian */
+  --bg-primary: #0a0d14;
+  --bg-secondary: #0e121b;
+  --bg-tertiary: #131824;
+  --bg-elevated: #181f2f;
+  --bg-card: rgba(14, 18, 27, 0.75);
+  --bg-card-hover: rgba(20, 26, 39, 0.9);
+
+  /* Secondary: Warm Off-White / High Contrast Text */
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+
+  /* Accent: Electric Violet / Purple */
+  --accent-violet: #8b5cf6;
+  --accent-violet-deep: #7c3aed;
+  --accent-violet-glow: rgba(139, 92, 246, 0.35);
+
+  /* Supporting Accent: Soft Cyan / Terminal Blue */
+  --accent-cyan: #06b6d4;
+  --accent-cyan-bright: #22d3ee;
+  --accent-cyan-glow: rgba(6, 182, 212, 0.35);
+
+  /* Anjali Signature Accent: Subtle Warm Peach / Rose Glow (Used Sparingly) */
+  --accent-peach: #fb7185;
+  --accent-peach-warm: #f43f5e;
+  --accent-peach-glow: rgba(251, 113, 133, 0.35);
+  --accent-amber: #f59e0b;
+  --accent-emerald: #10b981;
+
+  /* Gradients */
+  --gradient-signature: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 50%, #fb7185 100%);
+  --gradient-violet-cyan: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%);
+  --gradient-peach-violet: linear-gradient(135deg, #fb7185 0%, #8b5cf6 100%);
+  --gradient-card: linear-gradient(135deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 100%);
+  --gradient-terminal: linear-gradient(180deg, rgba(14, 18, 27, 0.95) 0%, rgba(10, 13, 20, 0.98) 100%);
+
+  /* Borders & Outlines */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-light: rgba(255, 255, 255, 0.14);
+  --border-active: rgba(139, 92, 246, 0.5);
+  --border-cyan: rgba(6, 182, 212, 0.4);
+  --border-peach: rgba(251, 113, 133, 0.4);
+
+  /* Glassmorphism & Depth */
+  --glass-bg: rgba(12, 16, 25, 0.75);
+  --glass-bg-heavy: rgba(10, 13, 20, 0.92);
+  --glass-blur: blur(16px);
+  --glass-blur-heavy: blur(24px);
+
+  /* Shadows & Glows */
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.6);
+  --shadow-glow-violet: 0 0 30px rgba(139, 92, 246, 0.25);
+  --shadow-glow-cyan: 0 0 30px rgba(6, 182, 212, 0.25);
+  --shadow-glow-peach: 0 0 30px rgba(251, 113, 133, 0.22);
+  --shadow-signature: 0 10px 40px -10px rgba(139, 92, 246, 0.3), 0 20px 50px -15px rgba(251, 113, 133, 0.2);
+
+  /* Typography */
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Layout & Dimensions */
+  --container-max-width: 1240px;
+  --container-padding: 2rem;
+  --header-height: 78px;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-pill: 9999px;
+
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-spring: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}

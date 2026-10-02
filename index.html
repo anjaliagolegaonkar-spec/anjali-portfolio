@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Anjali's Digital Lab — Personal Developer Portfolio of Anjali Ajay Golegaonkar. MCA Scholar, BCA Graduate, Python & AI Developer.">
+  <meta name="keywords" content="Anjali Ajay Golegaonkar, Anjali Digital Lab, MCA Student, BCA Graduate, Python Full Stack, AI Developer, IoT, Portfolio">
+  <meta name="author" content="Anjali Ajay Golegaonkar">
+  <meta name="theme-color" content="#0a0d14">
+
+  <!-- Social Graph Meta -->
+  <meta property="og:title" content="Anjali Ajay Golegaonkar | Anjali's Digital Lab">
+  <meta property="og:description" content="Personal Developer Workspace & Creative Portfolio of Anjali Ajay Golegaonkar.">
+  <meta property="og:type" content="website">
+
+  <title>Anjali Ajay Golegaonkar | Anjali's Digital Lab</title>
+
+  <!-- Google Fonts: Space Grotesk, Plus Jakarta Sans, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Style Sheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       INTRO SCREEN LOADER (A -> AG -> ANJALI)
+       ======================================================================== -->
+  <div id="lab-intro-loader" aria-hidden="true">
+    <div class="loader-monogram-box">
+      <span id="loader-monogram-text" class="loader-monogram-text">A</span>
+    </div>
+    <div id="loader-status-text" class="loader-status-text">&gt; initializing Anjali's digital lab...</div>
+    <div class="loader-progress-bar">
+      <div id="loader-progress-fill" class="loader-progress-fill"></div>
+    </div>
+  </div>
+
+  <!-- Ambient Glowing Orbs & Matrix Texture Background -->
+  <div class="ambient-glow-wrapper" aria-hidden="true">
+    <div class="ambient-glow ambient-glow-1"></div>
+    <div class="ambient-glow ambient-glow-2"></div>
+    <div class="ambient-glow ambient-glow-3"></div>
+  </div>
+  <div class="digital-grid-overlay" aria-hidden="true"></div>
+
+  <!-- Living Developer Canvas (Syntax Fragments & Cyber Dust) -->
+  <canvas id="digital-lab-canvas" aria-hidden="true"></canvas>
+
+  <!-- Global Toast Notification -->
+  <div class="toast-container" aria-live="polite">
+    <div id="global-toast" class="toast">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+      </svg>
+      <span id="toast-message">Notification message</span>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       FLOATING DIGITAL LAB NAVIGATION
+       ======================================================================== -->
+  <header class="navbar" role="banner">
+    <div class="container nav-container">
+      
+      <!-- Brand & Monogram Logo -->
+      <a href="#home" class="nav-brand" aria-label="Anjali Ajay Golegaonkar Home">
+        <div class="monogram-brand">
+          <span class="monogram-char">A</span>
+          <span class="monogram-glow-dot"></span>
+        </div>
+        <div class="nav-brand-text">
+          <span class="nav-brand-name">ANJALI GOLEGAONKAR</span>
+          <span class="nav-brand-status">
+            <span class="pulse-dot-cyan"></span> DIGITAL LAB
+          </span>
+        </div>
+      </a>
+
+      <!-- Main Navigation Menu -->
+      <nav class="nav-menu" role="navigation" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">HOME</a>
+        <a href="#about" class="nav-link">ABOUT</a>
+        <a href="#education" class="nav-link">EDUCATION</a>
+        <a href="#skills" class="nav-link">SKILLS</a>
+        <a href="#projects" class="nav-link">PROJECTS</a>
+        <a href="#achievements" class="nav-link">ACHIEVEMENTS</a>
+        <a href="#contact" class="nav-link">CONTACT</a>
+      </nav>
+
+      <!-- Status Indicator -->
+      <div class="nav-status-indicator">
+        <span class="pulse-dot-peach"></span>
+        <span>AVAILABLE TO CONNECT</span>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-nav-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ========================================================================
+         HERO SECTION
+         ======================================================================== -->
+    <section id="home" class="hero-section" aria-label="Hero Introduction">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Hero Text & Brand Identity -->
+          <div class="hero-content">
+            <div class="hero-terminal-meta">
+              <span class="pulse-dot-cyan"></span>
+              <span>&gt; MCA STUDENT / DEVELOPER / CREATOR</span>
+            </div>
+
+            <h1 class="hero-name">
+              <span class="first-name">ANJALI</span>
+              <span class="middle-name">AJAY</span>
+              <span class="last-name">GOLEGAONKAR</span>
+            </h1>
+
+            <div class="hero-roles">
+              <span>MCA Student</span>
+              <span style="color: var(--text-dim);">&bull;</span>
+              <span>BCA Graduate</span>
+              <span style="color: var(--text-dim);">&bull;</span>
+              <span>Python &amp; AI Enthusiast</span>
+            </div>
+
+            <div class="hero-main-statement">
+              &ldquo;Building ideas into experiences.&rdquo;
+            </div>
+
+            <p class="hero-description">
+              Currently pursuing MCA at ASM's IBMR Pune and exploring the intersection of programming, AI, IoT and web development.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">
+                <span>EXPLORE MY WORK &rarr;</span>
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                <span>LET'S CONNECT &rarr;</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Digital Lab Video Frame (Exact Existing Video Asset) -->
+          <div class="lab-video-3d-wrapper">
+            <div class="lab-video-card" id="lab-video-container">
+              
+              <!-- Video Terminal Header -->
+              <div class="lab-video-header">
+                <div class="lab-video-filename">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="2" y1="7" x2="7" y2="7"></line><line x1="2" y1="17" x2="7" y2="17"></line><line x1="17" y1="17" x2="22" y2="17"></line><line x1="17" y1="7" x2="22" y2="7"></line></svg>
+                  <span>ANJALI_PROFILE.MP4</span>
+                </div>
+                <span>STATUS: ONLINE &#9679;</span>
+              </div>
+
+              <!-- Live Badge -->
+              <div class="lab-video-live-pill">
+                <span class="pulse-dot-cyan"></span>
+                <span>PROFILE STREAM</span>
+              </div>
+
+              <!-- Audio Toggle -->
+              <button id="lab-audio-btn" class="lab-video-audio-toggle" aria-label="Toggle profile video sound" title="Unmute audio">
+                <span class="audio-icon">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="1" y1="1" x2="23" y2="23"></line><path d="M9 9v3a3 3 0 0 0 5.12 2.12M15 9.34V4a3 3 0 0 0-5.94-.6"></path><path d="M17 16.95A7 7 0 0 1 5 12v-2m14 0v2a7 7 0 0 1-.11 1.23"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+                </span>
+              </button>
+
+              <div class="lab-video-inner">
+                <!-- EXACT existing video asset -->
+                <video 
+                  id="lab-profile-video" 
+                  class="lab-video-element" 
+                  autoplay 
+                  loop 
+                  muted 
+                  playsinline 
+                  preload="auto"
+                  aria-label="Professional Profile Video of Anjali Ajay Golegaonkar">
+                  <source src="Woman_smiling_in_corporate_office_202609021453.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <div class="lab-scanner-beam" aria-hidden="true"></div>
+              </div>
+
+              <!-- Floating Status Decor -->
+              <div class="lab-video-status-float">
+                <div class="status-float-icon">⚡</div>
+                <div>
+                  <div class="status-float-label">ACADEMIC JOURNEY</div>
+                  <div class="status-float-text">Pursuing MCA • IBMR Pune</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#about" class="hero-scroll-indicator" aria-label="Scroll down to About section">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+        <span>EXPLORE</span>
+      </a>
+    </section>
+
+    <!-- ========================================================================
+         01 / ABOUT — "THE PERSON BEHIND THE CODE"
+         ======================================================================== -->
+    <section id="about" class="about-section" aria-label="About Me">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="terminal-tag">01 / ABOUT</div>
+          <h2 class="section-title">THE PERSON <span class="gradient-text">BEHIND THE CODE</span></h2>
+          <p class="section-desc">
+            Transforming software concepts into practical, reliable, and user-focused digital systems.
+          </p>
+        </div>
+
+        <div class="about-cards-grid">
+          
+          <!-- Narrative Panel & Strategic Focus Cards -->
+          <div class="about-main-panel reveal-on-scroll">
+            <p class="about-bio-text">
+              Motivated and detail-oriented <strong>BCA graduate</strong> with a strong foundation in programming, problem-solving, and software development. Hands-on experience building IoT, web, and AI-based applications through academic projects, combined with a certification in Python Full Stack development.
+            </p>
+            <p class="about-bio-text">
+              Currently pursuing <strong>MCA</strong> and looking to apply technical skills in a professional environment and contribute to organizational growth.
+            </p>
+
+            <div class="about-pillars-grid">
+              <div class="pillar-card">
+                <div class="pillar-icon">💻</div>
+                <div class="pillar-name">Programming &amp; Software Dev</div>
+              </div>
+              <div class="pillar-card">
+                <div class="pillar-icon">🧩</div>
+                <div class="pillar-name">Problem Solving &amp; DSA</div>
+              </div>
+              <div class="pillar-card">
+                <div class="pillar-icon">🤖</div>
+                <div class="pillar-name">AI &amp; NLP Innovation</div>
+              </div>
+              <div class="pillar-card">
+                <div class="pillar-icon">📡</div>
+                <div class="pillar-name">IoT &amp; Embedded Systems</div>
+              </div>
+              <div class="pillar-card">
+                <div class="pillar-icon">🌐</div>
+                <div class="pillar-name">Full Stack Web Dev</div>
+              </div>
+              <div class="pillar-card">
+                <div class="pillar-icon">🚀</div>
+                <div class="pillar-name">Continuous Learning</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Side Stack: Prominent Currently Pursuing MCA Badge & Languages -->
+          <div class="about-side-stack reveal-on-scroll">
+            
+            <!-- CURRENTLY PURSUING MCA CARD -->
+            <div class="mca-status-card">
+              <div class="mca-badge-top">
+                <span class="pulse-dot-cyan"></span>
+                <span>CURRENTLY PURSUING</span>
+              </div>
+              <h3 class="mca-degree-title">Master of Computer Applications (MCA)</h3>
+              <div class="mca-institute-name">ASM's IBMR Pune</div>
+              <div class="mca-sub-name">Institute of Business Management and Research</div>
+            </div>
+
+            <!-- Languages Card -->
+            <div class="languages-panel">
+              <h4 style="font-size: 1.05rem; font-weight: 700; color: #ffffff; display: flex; align-items: center; gap: 0.5rem;">
+                <span>🗣️</span> Languages Known
+              </h4>
+              <div class="languages-chip-group">
+                <div class="lang-pill">
+                  <span style="color: var(--accent-cyan);">●</span> English
+                </div>
+                <div class="lang-pill">
+                  <span style="color: var(--accent-violet);">●</span> Hindi
+                </div>
+                <div class="lang-pill">
+                  <span style="color: var(--accent-peach);">●</span> Marathi
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         02 / EDUCATION — "MY LEARNING JOURNEY"
+         ======================================================================== -->
+    <section id="education" class="education-section" aria-label="Education Timeline">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="terminal-tag">02 / EDUCATION</div>
+          <h2 class="section-title">MY LEARNING <span class="gradient-text">JOURNEY</span></h2>
+          <p class="section-desc">
+            A continuous progression of technical mastery, academic discipline, and practical growth.
+          </p>
+        </div>
+
+        <div class="path-timeline-wrapper">
+          <div class="path-spine-line"></div>
+
+          <!-- NODE 1: MCA (CURRENTLY PURSUING) -->
+          <div class="path-node active reveal-on-scroll">
+            <div class="path-node-monogram">A</div>
+            <div class="path-card">
+              <div class="path-card-header">
+                <div>
+                  <h3 class="path-degree">Master of Computer Applications (MCA)</h3>
+                  <div class="path-institute">ASM's IBMR Pune</div>
+                  <div class="path-sub-institute">Institute of Business Management and Research</div>
+                </div>
+                <span class="path-status-badge current">CURRENTLY PURSUING</span>
+              </div>
+              <div class="path-stats-pill">
+                <span>Stage:</span>
+                <strong>Currently Pursuing Post-Graduation</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- NODE 2: BCA (COMPLETED JULY 2026) -->
+          <div class="path-node reveal-on-scroll">
+            <div class="path-node-monogram">A</div>
+            <div class="path-card">
+              <div class="path-card-header">
+                <div>
+                  <h3 class="path-degree">Bachelor of Computer Application (BCA)</h3>
+                  <div class="path-institute">MGM'S College of CS &amp; IT, Nanded</div>
+                </div>
+                <span class="path-status-badge completed">Completed July 2026</span>
+              </div>
+              <div class="path-stats-pill">
+                <span>Academic Score:</span>
+                <strong>CGPA: 8.03</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- NODE 3: 12th HSC -->
+          <div class="path-node reveal-on-scroll">
+            <div class="path-node-monogram">A</div>
+            <div class="path-card">
+              <div class="path-card-header">
+                <div>
+                  <h3 class="path-degree">12th (HSC)</h3>
+                  <div class="path-institute">P.N. College, Nanded</div>
+                </div>
+                <span class="path-status-badge score">Higher Secondary</span>
+              </div>
+              <div class="path-stats-pill">
+                <span>Academic Score:</span>
+                <strong>68.83%</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- NODE 4: 10th SSC -->
+          <div class="path-node reveal-on-scroll">
+            <div class="path-node-monogram">A</div>
+            <div class="path-card">
+              <div class="path-card-header">
+                <div>
+                  <h3 class="path-degree">10th (SSC)</h3>
+                  <div class="path-institute">Kusumtai High School, Nanded</div>
+                </div>
+                <span class="path-status-badge score">Secondary School</span>
+              </div>
+              <div class="path-stats-pill">
+                <span>Academic Score:</span>
+                <strong>73.20%</strong>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         03 / SKILLS — "MY DEVELOPER TOOLKIT"
+         ======================================================================== -->
+    <section id="skills" class="skills-section" aria-label="Developer Toolkit">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="terminal-tag">03 / SKILLS</div>
+          <h2 class="section-title">MY DEVELOPER <span class="gradient-text">TOOLKIT</span></h2>
+          <p class="section-desc">
+            Core technologies and foundational pillars actively powering my digital workspace.
+          </p>
+        </div>
+
+        <div class="toolkit-network-container">
+          
+          <!-- PYTHON (Featured) -->
+          <div class="toolkit-card toolkit-featured reveal-on-scroll">
+            <div class="toolkit-icon-box">🐍</div>
+            <div class="toolkit-info">
+              <div class="toolkit-name-row">
+                <span class="toolkit-name">Python</span>
+                <span class="toolkit-pill" style="background: rgba(251, 113, 133, 0.2); color: var(--accent-peach);">CORE / CERTIFIED</span>
+              </div>
+              <div class="toolkit-meta-line">&gt; language.active | projects: 2 (MindLock, TextTruth.AI)</div>
+            </div>
+          </div>
+
+          <!-- JAVA -->
+          <div class="toolkit-card reveal-on-scroll">
+            <div class="toolkit-icon-box">☕</div>
+            <div class="toolkit-info">
+              <div class="toolkit-name-row">
+                <span class="toolkit-name">Java</span>
+                <span class="toolkit-pill">OOP</span>
+              </div>
+              <div class="toolkit-meta-line">&gt; language.active | type: object_oriented</div>
+            </div>
+          </div>
+
+          <!-- C -->
+          <div class="toolkit-card reveal-on-scroll">
+            <div class="toolkit-icon-box">⚡</div>
+            <div class="toolkit-info">
+              <div class="toolkit-name-row">
+                <span class="toolkit-name">C</span>
+                <span class="toolkit-pill">SYSTEMS</span>
+              </div>
+              <div class="toolkit-meta-line">&gt; language.active | type: structural_programming</div>
+            </div>
+          </div>
+
+          <!-- PHP -->
+          <div class="toolkit-card reveal-on-scroll">
+            <div class="toolkit-icon-box">🐘</div>
+            <div class="toolkit-info">
+              <div class="toolkit-name-row">
+                <span class="toolkit-name">PHP</span>
+                <span class="toolkit-pill">WEB BACKEND</span>
+              </div>
+              <div class="toolkit-meta-line">&gt; language.active | type: server_side_scripting</div>
+            </div>
+          </div>
+
+          <!-- JAVASCRIPT -->
+          <div class="toolkit-card reveal-on-scroll">
+            <div class="toolkit-icon-box">📜</div>
+            <div class="toolkit-info">
+              <div class="toolkit-name-row">
+                <span class="toolkit-name">JavaScript</span>
+                <span class="toolkit-pill">DYNAMIC WEB</span>
+              </div>
+              <div class="toolkit-meta-line">&gt; language.active | type: interactive_client_engine</div>
+            </div>
+          </div>
+
+          <!-- HTML -->
+          <div class="toolkit-card reveal-on-scroll">
+            <div class="toolkit-icon-box">🌐</div>
+            <div class="toolkit-info">
+              <div class="toolkit-name-row">
+                <span class="toolkit-name">HTML</span>
+                <span class="toolkit-pill">MARKUP</span>
+              </div>
+              <div class="toolkit-meta-line">&gt; markup.active | type: semantic_structure</div>
+            </div>
+          </div>
+
+          <!-- CSS -->
+          <div class="toolkit-card reveal-on-scroll">
+            <div class="toolkit-icon-box">🎨</div>
+            <div class="toolkit-info">
+              <div class="toolkit-name-row">
+                <span class="toolkit-name">CSS</span>
+                <span class="toolkit-pill">STYLING</span>
+              </div>
+              <div class="toolkit-meta-line">&gt; styling.active | type: modern_layouts_design</div>
+            </div>
+          </div>
+
+          <!-- SQL -->
+          <div class="toolkit-card reveal-on-scroll">
+            <div class="toolkit-icon-box">🗄️</div>
+            <div class="toolkit-info">
+              <div class="toolkit-name-row">
+                <span class="toolkit-name">Database Management (SQL)</span>
+                <span class="toolkit-pill">DATABASE</span>
+              </div>
+              <div class="toolkit-meta-line">&gt; database.active | type: relational_queries_dsa</div>
+            </div>
+          </div>
+
+          <!-- DSA -->
+          <div class="toolkit-card reveal-on-scroll">
+            <div class="toolkit-icon-box">🧠</div>
+            <div class="toolkit-info">
+              <div class="toolkit-name-row">
+                <span class="toolkit-name">Data Structures &amp; Algorithms (DSA)</span>
+                <span class="toolkit-pill">CORE</span>
+              </div>
+              <div class="toolkit-meta-line">&gt; concept.active | type: algorithmic_problem_solving</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         04 / PROJECTS — "THINGS I'VE BUILT"
+         ======================================================================== -->
+    <section id="projects" class="projects-section" aria-label="Projects">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="terminal-tag">04 / PROJECTS</div>
+          <div class="terminal-prompt" style="margin-bottom: 0.75rem;">loading projects...</div>
+          <h2 class="section-title">THINGS I'VE <span class="gradient-text">BUILT</span></h2>
+          <p class="section-desc">
+            Hands-on applications built across embedded IoT hardware, dynamic web frameworks, and natural language processing.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- PROJECT 01 -->
+          <div class="project-card reveal-on-scroll">
+            <div>
+              <div class="project-card-header">
+                <span class="project-number">01</span>
+                <div class="project-category-icon" title="Hardware &amp; IoT System">📡</div>
+              </div>
+              <h3 class="project-title">IOT Based Health Monitoring System Using ESP32</h3>
+              <p class="project-description">
+                Built a health monitoring system using ESP32 integrated with DHT11 and MAX30100 Pulse Oximeter hardware components. Programmed the device using Arduino software to capture and process real-time health data.
+              </p>
+            </div>
+            <div class="project-tech-stack">
+              <span class="tech-tag">ESP32</span>
+              <span class="tech-tag">DHT11</span>
+              <span class="tech-tag">MAX30100 Pulse Oximeter</span>
+              <span class="tech-tag">Arduino</span>
+            </div>
+          </div>
+
+          <!-- PROJECT 02 -->
+          <div class="project-card reveal-on-scroll">
+            <div>
+              <div class="project-card-header">
+                <span class="project-number">02</span>
+                <div class="project-category-icon" title="Flask &amp; Python App">🧩</div>
+              </div>
+              <h3 class="project-title">MindLock: A Riddle Game</h3>
+              <p class="project-description">
+                Developed an AI-themed riddle game using Flask with dynamic levels, timers, and scoring. Designed a responsive UI to deliver a smooth and engaging user experience.
+              </p>
+            </div>
+            <div class="project-tech-stack">
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">Python</span>
+            </div>
+          </div>
+
+          <!-- PROJECT 03 -->
+          <div class="project-card reveal-on-scroll">
+            <div>
+              <div class="project-card-header">
+                <span class="project-number">03</span>
+                <div class="project-category-icon" title="AI &amp; NLP Detection Engine">🤖</div>
+              </div>
+              <h3 class="project-title">TextTruth.AI</h3>
+              <p class="project-description">
+                Built an AI-based web application that detects AI-generated content in documents using NLP techniques. Implemented sentence-level highlighting of suspicious content and automated analysis report generation.
+              </p>
+            </div>
+            <div class="project-tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">NLP</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         05 / CERTIFICATION — "WHAT I'VE LEARNED"
+         ======================================================================== -->
+    <section id="certification" class="certification-section" aria-label="Certification">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="terminal-tag">05 / CERTIFICATION</div>
+          <h2 class="section-title">WHAT I'VE <span class="gradient-text">LEARNED</span></h2>
+          <p class="section-desc">
+            Professional development and verified full stack software engineering credentials.
+          </p>
+        </div>
+
+        <div class="cert-card-wrapper reveal-on-scroll">
+          <div class="cert-card">
+            <div class="cert-icon-box">
+              <span>🐍</span>
+            </div>
+            <div class="cert-content">
+              <div class="cert-badge-verified">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <span>Verified Qualification</span>
+              </div>
+              <h3 class="cert-title">Python Full Stack Training</h3>
+              <p class="cert-issuer">SevenMentors</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         06 / ACHIEVEMENTS — "MORE THAN CODE"
+         ======================================================================== -->
+    <section id="achievements" class="achievements-section" aria-label="Achievements">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="terminal-tag">06 / ACHIEVEMENTS</div>
+          <h2 class="section-title">MORE THAN <span class="gradient-text">CODE</span></h2>
+          <p class="section-desc">
+            Milestones in competition, leadership workshops, and active institutional involvement.
+          </p>
+        </div>
+
+        <div class="achievements-grid">
+          
+          <!-- 01 -->
+          <div class="achievement-card reveal-on-scroll">
+            <div class="achievement-card-top">
+              <span class="achievement-number">01</span>
+              <div class="achievement-icon">🎭</div>
+            </div>
+            <span class="achievement-rank-tag">1st Prize</span>
+            <h3 class="achievement-title">District-Level Drama Competition</h3>
+            <p class="achievement-desc">
+              Secured 1st Prize in District-Level Drama Competition for outstanding performance and teamwork.
+            </p>
+          </div>
+
+          <!-- 02 -->
+          <div class="achievement-card reveal-on-scroll">
+            <div class="achievement-card-top">
+              <span class="achievement-number">02</span>
+              <div class="achievement-icon">🏆</div>
+            </div>
+            <span class="achievement-rank-tag">1st Rank</span>
+            <h3 class="achievement-title">ESP32 Workshop</h3>
+            <p class="achievement-desc">
+              Achieved 1st Rank in ESP32 Workshop, demonstrating strong understanding of IoT and embedded systems.
+            </p>
+          </div>
+
+          <!-- 03 -->
+          <div class="achievement-card reveal-on-scroll">
+            <div class="achievement-card-top">
+              <span class="achievement-number">03</span>
+              <div class="achievement-icon">⭐</div>
+            </div>
+            <span class="achievement-rank-tag">Star of the MGM</span>
+            <h3 class="achievement-title">Cultural Activity Award</h3>
+            <p class="achievement-desc">
+              Got Star of the MGM for cultural activity, honoring creative excellence and organizational involvement.
+            </p>
+          </div>
+
+          <!-- 04 -->
+          <div class="achievement-card reveal-on-scroll">
+            <div class="achievement-card-top">
+              <span class="achievement-number">04</span>
+              <div class="achievement-icon">🤝</div>
+            </div>
+            <span class="achievement-rank-tag">Active Member</span>
+            <h3 class="achievement-title">National Service Scheme (NSS)</h3>
+            <p class="achievement-desc">
+              Active member of the National Service Scheme (NSS), involved in social service and community development activities.
+            </p>
+          </div>
+
+          <!-- 05 -->
+          <div class="achievement-card reveal-on-scroll">
+            <div class="achievement-card-top">
+              <span class="achievement-number">05</span>
+              <div class="achievement-icon">🎪</div>
+            </div>
+            <span class="achievement-rank-tag">Leadership &amp; Participation</span>
+            <h3 class="achievement-title">College Cultural Programs</h3>
+            <p class="achievement-desc">
+              Actively participated in college cultural programs, contributing to event organization and performances.
+            </p>
+          </div>
+
+          <!-- 06 -->
+          <div class="achievement-card reveal-on-scroll">
+            <div class="achievement-card-top">
+              <span class="achievement-number">06</span>
+              <div class="achievement-icon">🩺</div>
+            </div>
+            <span class="achievement-rank-tag">Community Outreach</span>
+            <h3 class="achievement-title">Health Awareness Program</h3>
+            <p class="achievement-desc">
+              Participated in Health Awareness Program, supporting community outreach and public health initiatives.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         07 / BEYOND CODE — PERSONALITY ORBIT
+         ======================================================================== -->
+    <section id="beyond-code" class="beyond-code-section" aria-label="Beyond Code">
+      <div class="container">
+        
+        <div class="beyond-banner reveal-on-scroll">
+          <div class="terminal-tag" style="display: table; margin: 0 auto 1.25rem auto;">07 / BEYOND CODE</div>
+          
+          <h2 class="beyond-quote-main">
+            &ldquo;Technology is what I build.<br>
+            <span class="quote-part-2">Creativity is how I think.&rdquo;</span>
+          </h2>
+
+          <div id="beyond-orbit-stage" class="beyond-orbit-stage">
+            
+            <!-- Central Monogram Node -->
+            <div class="beyond-center-node">
+              <span class="beyond-center-name">ANJALI</span>
+              <span class="beyond-center-sub">CORE IDENTITY</span>
+            </div>
+
+            <!-- Orbiting Personality Pillars -->
+            <div class="beyond-satellites-group">
+              <div class="beyond-satellite-pill satellite-1">🎭 DRAMA</div>
+              <div class="beyond-satellite-pill satellite-2">✨ CULTURE</div>
+              <div class="beyond-satellite-pill satellite-3">💡 CREATIVITY</div>
+              <div class="beyond-satellite-pill satellite-4">🤝 COMMUNITY</div>
+              <div class="beyond-satellite-pill satellite-5">⚡ TECHNOLOGY</div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         08 / CONTACT — "LET'S BUILD SOMETHING."
+         ======================================================================== -->
+    <section id="contact" class="contact-section" aria-label="Contact">
+      <div class="container">
+        
+        <div class="contact-card reveal-on-scroll">
+          <div class="terminal-tag" style="display: table; margin: 0 auto 1.25rem auto;">08 / CONTACT</div>
+          
+          <h2 class="contact-title">
+            LET'S BUILD <span class="gradient-text">SOMETHING.</span>
+          </h2>
+          <p class="contact-subtitle">
+            Have an idea, opportunity, or project in mind? Let's connect and collaborate.
+          </p>
+
+          <div class="contact-details-grid">
+            
+            <!-- Email -->
+            <div class="contact-info-block">
+              <div class="contact-info-icon">✉️</div>
+              <div class="contact-info-label">Direct Email</div>
+              <div class="contact-info-val">anjaliagolegaonkar@gmail.com</div>
+            </div>
+
+            <!-- Location -->
+            <div class="contact-info-block">
+              <div class="contact-info-icon">📍</div>
+              <div class="contact-info-label">Location</div>
+              <div class="contact-info-val">Nanded, Maharashtra</div>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="contact-info-block">
+              <div class="contact-info-icon">🔗</div>
+              <div class="contact-info-label">LinkedIn Profile</div>
+              <div class="contact-info-val">anjali-golegonkar-55a3882a0</div>
+            </div>
+
+          </div>
+
+          <div class="contact-action-row">
+            <a href="mailto:anjaliagolegaonkar@gmail.com" class="btn btn-primary">
+              <span>START A CONVERSATION &rarr;</span>
+            </a>
+            
+            <button class="btn btn-secondary copy-email-btn" aria-label="Copy email address to clipboard">
+              <span>Copy Email Address</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            </button>
+
+            <a href="https://www.linkedin.com/in/anjali-golegonkar-55a3882a0" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" aria-label="Visit LinkedIn Profile">
+              <span>View LinkedIn</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+
+          <div class="contact-terminal-status">&gt; waiting_for_connection...</div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SIGNATURE ENDING & FOOTER
+         ======================================================================== -->
+    <section class="finale-section" aria-label="Closing Note">
+      <div class="container">
+        
+        <div class="finale-phrases reveal-on-scroll">
+          <div class="finale-word finale-word-1">KEEP LEARNING.</div>
+          <div class="finale-word finale-word-2">KEEP BUILDING.</div>
+          <div class="finale-word finale-word-3">KEEP EXPLORING.</div>
+          <div class="finale-word finale-word-4">BEYOND LIMITS.</div>
+        </div>
+
+        <div class="finale-author">ANJALI AJAY GOLEGAONKAR</div>
+        <div class="finale-sub">MCA Student &bull; Developer &bull; Creator</div>
+
+        <!-- Closing "A" Monogram -->
+        <div class="closing-monogram">A</div>
+
+        <footer class="site-footer" role="contentinfo">
+          <div>
+            &copy; 2026 Anjali Ajay Golegaonkar. All rights reserved.
+          </div>
+          <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-cyan);">
+            ANJALI'S DIGITAL LAB // ASM'S IBMR PUNE
+          </div>
+        </footer>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Scripts -->
+  <script src="js/codeflow.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/orbit.js"></script>
+  <script src="js/tilt.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
